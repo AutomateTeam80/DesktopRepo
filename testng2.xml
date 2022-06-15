@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="6">
+
+<listeners>
+ <listener class-name="UnityProject.Listeners"/>
+</listeners>
+
+	
+
+	<test name="Navigate to Sign In page">
+		<classes>
+			<class name="UnityProject.SignInPage"/>
+		</classes>
+	</test>
+
+	<test name="Successfull login (Username/Password)">
+		<classes>
+			<class name="UnityProject.TC_001_Successfullogin_UsernamePassword"/>
+		</classes>
+	</test>
+
+	<test name="Successfull login (Phone/Ext/Password)">
+		<classes>
+			<class name="UnityProject.TC_002_Successfullogin_PhoneNumber_Ext"/>
+		</classes>
+	</test>
+
+	<test name="Invalid Username">
+		<classes>
+			<class name="UnityProject.TC_004_Unsuccessfullogin_Incorrect_Username"/>
+		</classes>
+	</test>
+	
+	<test name="Invalid Password">
+		<classes>
+			<class name="UnityProject.TC_005_UnsuccessfulLogin_InvalidPassword"/>
+		</classes>
+	</test>
+	
+	<test name="Successfull Logout">
+		<classes>
+			<class name="UnityProject.TC_006_Successfullogout"/>
+		</classes>
+	</test>
+<!-- Test-->	
+
+
+</suite> <!-- suite-->
